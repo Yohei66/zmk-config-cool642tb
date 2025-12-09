@@ -71,6 +71,15 @@
 
             tap-ms = <20>;
         };
+
+        scroll_up_down2: scroll_up_down2 {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+
+            tap-ms = <20>;
+            label = "SCROLL_UP_DOWN2";
+        };
     };
 
     keymap {
@@ -84,7 +93,7 @@
 &kp LEFT_SHIFT  &kp TAB  &kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_ALT  &lt 1 SPACE  &lt 2 DEL   &kp BACKSPACE                             &kp RCTRL
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&scroll_up_down2>;
         };
 
         number {
@@ -106,7 +115,7 @@
 &kp RSHIFT   &kp TAB  &kp LCTRL          &kp RGUI       &kp LEFT_ALT  &lt 1 COMMA  &kp DEL              &kp BACKSPACE                                                  &kp LEFT_SHIFT
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
+            sensor-bindings = <&scroll_up_down>;
         };
 
         tenkey {
