@@ -100,10 +100,10 @@
 
         function {
             bindings = <
-&kp F1       &kp F2   &kp F3             &kp F4         &kp F5                                               &kp F6          &kp F7           &kp F8        &kp F9     &kp F10
-&kp AT_SIGN  &kp SQT  &kp DOUBLE_QUOTES  &kp SEMICOLON  &kp COLON     &to 3        &kp INT_KATAKANAHIRAGANA  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp UP_ARROW  &kp RIGHT  &kp ENTER
-&kp Z        &kp X    &kp C              &kp V          &kp B         &lt 0 COMMA  &lt 1 PERIOD              &kp LC(SPACE)   &kp LEFT_ARROW   &kp DOWN      &kp RIGHT  &kp SLASH
-&kp RSHIFT   &kp TAB  &kp LCTRL          &kp RGUI       &kp LEFT_ALT  &lt 1 COMMA  &none                     &kp BACKSPACE                                             &kp LEFT_SHIFT
+&kp F1       &kp F2   &kp F3             &kp F4         &kp F5                                               &kp F6          &kp F7          &kp F8        &kp F9         &kp F10
+&kp AT_SIGN  &kp SQT  &kp DOUBLE_QUOTES  &kp SEMICOLON  &kp COLON     &to 3        &kp INT_KATAKANAHIRAGANA  &kp LEFT_BRACE  &kp PAGE_UP     &kp UP_ARROW  &kp PAGE_DOWN  &kp ENTER
+&kp Z        &kp X    &kp C              &kp V          &kp B         &lt 0 COMMA  &lt 1 PERIOD              &kp END         &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &kp HOME
+&kp RSHIFT   &kp TAB  &kp LCTRL          &kp RGUI       &kp LEFT_ALT  &lt 1 COMMA  &kp DEL                   &kp BACKSPACE                                                &kp LEFT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
