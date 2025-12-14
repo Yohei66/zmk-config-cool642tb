@@ -93,7 +93,7 @@
 &kp LCTRL  &kp TAB  &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &lt 1 DEL  &lt 2 SPACE  &kp BACKSPACE                             &kp RIGHT_SHIFT
             >;
 
-            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
+            sensor-bindings = <&scroll_up_down2>;
         };
 
         number {
