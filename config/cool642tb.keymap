@@ -111,7 +111,7 @@
             bindings = <
 &kp F1         &kp F2            &kp F3             &kp F4         &kp F5                                          &kp F6            &kp F7          &kp F8        &kp F9         &kp F10
 &kp LESS_THAN  &kp GREATER_THAN  &kp DOUBLE_QUOTES  &kp SEMICOLON  &kp COLON       &to 3      &kp INTERNATIONAL_4  &kp INT_MUHENKAN  &kp PAGE_UP     &kp UP_ARROW  &kp PAGE_DOWN  &kp ENTER
-&kp ESCAPE     &mkp MB4          &kp C              &kp V          &kp CAPS        &to 0      &lt 1 PERIOD         &kp HOME          &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &kp END
+&kp ESCAPE     &mkp MB4          &mkp MB5           &mkp MB3       &kp CAPS        &to 0      &lt 1 PERIOD         &kp HOME          &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &kp END
 &kp LCTRL      &kp TAB           &kp LEFT_GUI       &kp LEFT_ALT   &kp LEFT_SHIFT  &lt 1 DEL  &kp SPACE            &kp BACKSPACE                                                  &kp LEFT_SHIFT
             >;
 
