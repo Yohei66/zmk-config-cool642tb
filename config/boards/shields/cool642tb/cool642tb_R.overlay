@@ -58,6 +58,7 @@
 };
 
 #include <input/processors.dtsi>
+#include <dt-bindings/zmk/input_transform.h>
 
 &zip_temp_layer {
     excluded-positions = <
