@@ -74,7 +74,7 @@
         
         input-processors = <
             &zip_invert_y 
-            &zip_xy_to_scroll_mapper 1 2
+            &zip_xy_to_scroll_mapper 12
         >;
         process-next; 
     };
