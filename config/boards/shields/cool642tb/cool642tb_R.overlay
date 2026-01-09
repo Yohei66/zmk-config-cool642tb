@@ -96,8 +96,8 @@
         
         input-processors = <
             &zip_xy_transform INPUT_TRANSFORM_Y_INVERT
-            &zip_scroll_x_scaler 1 6
-            &zip_scroll_y_scaler 1 3
+            &zip_scroll_x_scaler 1 12
+            &zip_scroll_y_scaler 1 6
             &zip_xy_to_scroll_mapper                     
         >;
         process-next; 
