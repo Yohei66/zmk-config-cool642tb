@@ -75,7 +75,7 @@
         
         input-processors = <
             &zip_xy_transform INPUT_TRANSFORM_Y_INVERT
-            &zip_xy_scaler 1 2                          // 感度を 1/12 に
+            &zip_xy_scaler 1 4                    // 感度を 1/12 に
             &zip_xy_to_scroll_mapper                     
         >;
         process-next; 
