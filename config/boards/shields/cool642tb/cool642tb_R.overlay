@@ -59,7 +59,7 @@
 
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
-
+#include <zephyr/dt-bindings/input/input-event-codes.h>
 &zip_temp_layer {
     excluded-positions = <
         19 // K
@@ -75,7 +75,8 @@
         
         input-processors = <
             &zip_xy_transform INPUT_TRANSFORM_Y_INVERT
-            &zip_xy_scaler 1 4                    // 感度を 1/12 に
+            &zip_scroll_x_scaler 1 6
+            &zip_scroll_y_scaler 1 3
             &zip_xy_to_scroll_mapper                     
         >;
         process-next; 
