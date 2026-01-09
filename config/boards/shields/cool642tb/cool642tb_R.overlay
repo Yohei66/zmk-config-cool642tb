@@ -71,7 +71,8 @@
         device = <&trackball>;
         scroller {
         layers = <1>;
-        input-processors = <&zip_xy_to_scroll_mapper>;
+        &zip_invert_y 
+        input-processors = <&zip_xy_to_scroll_mapper 12>;
         process-next; 
     };
         input-processors = <&zip_temp_layer 4 10000>;
