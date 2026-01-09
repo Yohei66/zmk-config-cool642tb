@@ -73,7 +73,7 @@
         layers = <1>;
         
         input-processors = <
-            &zip_xy_transform (INPUT_TRANSFORM_Y_INVERT)  // 方向反転
+            &zip_xy_transform INPUT_TRANSFORM_XY_SWAP  // 方向反転
             &zip_xy_scaler 1 2                          // 感度を 1/12 に
             &zip_xy_to_scroll_mapper                     
         >;
