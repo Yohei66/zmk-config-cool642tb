@@ -74,6 +74,7 @@
             #input-processor-cells = <2>;
             type = <INPUT_EV_REL>;
             codes = <INPUT_REL_HWHEEL>;
+            track-remainders;
         };
 
         zip_scroll_y_scaler: zip_scroll_y_scaler {
