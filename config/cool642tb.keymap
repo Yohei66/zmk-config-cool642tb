@@ -53,6 +53,13 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        zoom: zoom {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LCTRL &mo 1>;
+            label = "zoom";
+        };
     };
 
     behaviors {
@@ -134,7 +141,7 @@
             bindings = <
 &none           &none    &none         &none         &none                                     &none      &none     &mkp MCLK     &none     &none
 &none           &none    &none         &none         &none          &to 0        &kp N2        &mkp MB5   &mkp MB1  &lt 1 LSHIFT  &mkp MB2  &mkp MB4
-&kp LEFT_SHIFT  &none    &none         &none         &none          &to 0        &kp N4        &none      &none     &none         &none     &kp RIGHT_SHIFT
+&kp LEFT_SHIFT  &none    &none         &none         &none          &to 0        &kp N4        &none      &none     &zoom         &none     &kp RIGHT_SHIFT
 &kp LCTRL       &kp TAB  &kp LEFT_WIN  &kp LEFT_ALT  &kp BACKSPACE  &lt 1 SPACE  &lt 2 DELETE  &kp ENTER                                    &kp RCTRL
             >;
 
