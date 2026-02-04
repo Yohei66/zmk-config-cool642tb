@@ -106,10 +106,10 @@
 
         number {
             bindings = <
-&kp N1             &kp N2            &kp N3                &kp N4        &kp N5                                  &kp N6            &kp N7        &kp N8             &kp N9           &kp N0
-&kp EXCLAMATION    &kp LS(NUMBER_2)  &kp HASH              &kp DOLLAR    &kp PERCENT    &to 2       &bt BT_NXT   &kp LS(NUMBER_6)  &kp LS(N7)    &kp LS(N8)         &kp LS(N9)       &kp ENTER
-&kp LS(SEMICOLON)  &kp MINUS         &kp LS(SINGLE_QUOTE)  &kp SLASH     &kp LS(MINUS)  &to 0       &bt BT_PRV   &kp LEFT_BRACKET  &kp QUESTION  &kp RIGHT_BRACKET  &kp NON_US_HASH  &kp LS(INTERNATIONAL_1)
-&bt BT_SEL 0       &bt BT_SEL 1      &bt BT_SEL 2          &bt BT_SEL 3  &bt BT_SEL 4   &bt BT_CLR  &lt 3 SPACE  &kp BACKSPACE                                                       &kp LEFT_SHIFT
+&kp N1                        &kp N2            &kp N3                &kp N4        &kp N5                                  &kp N6            &kp N7        &kp N8             &kp N9           &kp N0
+&kp EXCLAMATION               &kp LS(NUMBER_2)  &kp HASH              &kp DOLLAR    &kp PERCENT    &to 2       &bt BT_NXT   &kp LS(NUMBER_6)  &kp LS(N7)    &kp LS(N8)         &kp LS(N9)       &kp ENTER
+&mt LEFT_SHIFT LS(SEMICOLON)  &kp MINUS         &kp LS(SINGLE_QUOTE)  &kp SLASH     &kp LS(MINUS)  &to 0       &bt BT_PRV   &kp LEFT_BRACKET  &kp QUESTION  &kp RIGHT_BRACKET  &kp NON_US_HASH  &kp LS(INTERNATIONAL_1)
+&bt BT_SEL 0                  &bt BT_SEL 1      &bt BT_SEL 2          &bt BT_SEL 3  &bt BT_SEL 4   &bt BT_CLR  &lt 3 SPACE  &kp BACKSPACE                                                       &kp LEFT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -117,10 +117,10 @@
 
         function {
             bindings = <
-&kp F1               &kp F2                &kp F3            &kp F4         &kp F5                                            &kp F6            &kp F7          &kp F8        &kp F9         &kp F10
-&kp INTERNATIONAL_1  &kp LS(LEFT_BRACKET)  &kp LS(NUMBER_2)  &kp SEMICOLON  &kp SINGLE_QUOTE  &to 3      &kp INTERNATIONAL_4  &kp INT_MUHENKAN  &kp PAGE_UP     &kp UP_ARROW  &kp PAGE_DOWN  &kp ENTER
-&kp ESCAPE           &mkp MB4              &mkp MB5          &mkp MB3       &kp CAPS          &to 0      &lt 1 PERIOD         &kp HOME          &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &kp END
-&kp LCTRL            &kp TAB               &kp LEFT_GUI      &kp LEFT_ALT   &kp LEFT_SHIFT    &lt 1 DEL  &kp SPACE            &kp BACKSPACE                                                  &kp LEFT_SHIFT
+&kp F1                 &kp F2                &kp F3            &kp F4         &kp F5                                              &kp F6            &kp F7          &kp F8        &kp F9         &kp F10
+&kp INTERNATIONAL_1    &kp LS(LEFT_BRACKET)  &kp LS(NUMBER_2)  &kp SEMICOLON  &kp SINGLE_QUOTE  &to 3        &kp INTERNATIONAL_4  &kp INT_MUHENKAN  &kp PAGE_UP     &kp UP_ARROW  &kp PAGE_DOWN  &kp ENTER
+&mt LEFT_SHIFT ESCAPE  &mkp MB4              &mkp MB5          &mkp MB3       &kp CAPS          &to 0        &lt 1 PERIOD         &kp HOME          &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &mt LEFT_SHIFT END
+&kp LCTRL              &kp TAB               &kp LEFT_GUI      &kp LEFT_ALT   &kp BACKSPACE     &lt 1 SPACE  &kp DEL              &kp ENTER                                                      &kp LEFT_SHIFT
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -128,10 +128,10 @@
 
         tenkey {
             bindings = <
-&kp N7        &kp N8        &kp N9        &kp ASTERISK       &kp SLASH                             &kp LS(EQUAL)  &kp CARET  &kp C_AC_SCROLL_UP  &kp C_AC_SCROLL_DOWN  &kp P
-&kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS          &kp GRAVE       &to 0      &kp N2     &kp H          &kp J      &kp K_SCROLL_UP     &kp K_SCROLL_DOWN     &kp ENTER
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LS(SEMICOLON)  &kp EQUAL       &kp N3     &kp N4     &kp N          &kp M      &kp COMMA           &kp PERIOD            &kp SLASH
-&kp LCTRL     &kp N0        &kp PERIOD    &kp LS(MINUS)      &kp LEFT_SHIFT  &lt 1 DEL  &kp SPACE  &kp BACKSPACE                                                       &kp BSPC
+&kp N7        &kp N8        &kp N9        &kp ASTERISK       &kp SLASH                            &kp LS(EQUAL)  &kp CARET  &kp C_AC_SCROLL_UP  &kp C_AC_SCROLL_DOWN  &kp P
+&kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS          &kp GRAVE      &to 0        &kp N2   &kp H          &kp J      &kp K_SCROLL_UP     &kp K_SCROLL_DOWN     &kp ENTER
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LS(SEMICOLON)  &kp EQUAL      &kp N3       &kp N4   &kp N          &kp M      &kp COMMA           &kp PERIOD            &kp SLASH
+&kp LCTRL     &kp N0        &kp PERIOD    &kp LS(MINUS)      &kp BACKSPACE  &lt 1 SPACE  &kp DEL  &kp ENTER                                                           &kp BSPC
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
