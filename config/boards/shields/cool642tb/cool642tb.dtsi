@@ -100,6 +100,10 @@
 
     right_encoder: encoder_right {
         status = "disabled";
+        compatible = "alps,ec11";
+        a-gpios = <&gpio0 30 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        b-gpios = <&gpio0 31 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+        steps = <24>;
     };
 
     sensors: sensors {
