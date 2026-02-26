@@ -118,7 +118,7 @@
         #input-processor-cells = <2>;
 
         threshold = <15>;              // まずは 10〜20 くらいで調整
-        excluded-positions = <18 20>;   // ここは「クリックに使うキー」を入れる（J/L）
+        excluded-positions = <6 8 18 19 20 21>;   // ここは「クリックに使うキー」を入れる（J/L）
         require-prior-idle-ms = <300>;  // タイピング直後はAMLに入らない（超重要）
         reset-timeout-ms = <200>;       // ちょい止めたら累積移動をリセット
     };
