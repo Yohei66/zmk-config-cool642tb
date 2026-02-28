@@ -101,7 +101,7 @@
 &kp LCTRL         &kp TAB  &kp LEFT_GUI  &kp LEFT_ALT  &kp BACKSPACE  &lt 1 SPACE          &lt 2 DEL              &lt 2 ENTER                                &mt RCTRL C_MUTE
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&scroll_up_down2>;
         };
 
         number {
