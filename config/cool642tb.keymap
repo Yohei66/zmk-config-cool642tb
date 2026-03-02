@@ -72,13 +72,14 @@
             tapping-term-ms = <200>;
         };
 
+        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&kp K_SCROLL_UP>, <&kp K_SCROLL_DOWN>;
 
-scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
-    compatible = "zmk,behavior-sensor-rotate";
-    #sensor-binding-cells = <0>;
-    bindings = <&kp K_SCROLL_UP>, <&kp K_SCROLL_DOWN>;
-    tap-ms = <20>;
-};
+            tap-ms = <20>;
+        };
+
         scroll_up_down2: scroll_up_down2 {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
@@ -110,8 +111,6 @@ scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
 &mt LEFT_SHIFT LS(SEMICOLON)  &kp MINUS         &kp LS(SINGLE_QUOTE)  &kp SLASH     &kp LS(MINUS)  &to 0       &bt BT_PRV   &kp LEFT_BRACKET  &kp QUESTION  &kp RIGHT_BRACKET  &kp NON_US_HASH  &kp LS(INTERNATIONAL_1)
 &bt BT_SEL 0                  &bt BT_SEL 1      &bt BT_SEL 2          &bt BT_SEL 3  &bt BT_SEL 4   &bt BT_CLR  &lt 3 SPACE  &kp BACKSPACE                                                       &kp LEFT_SHIFT
             >;
-
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         function {
@@ -121,8 +120,6 @@ scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
 &mt LEFT_SHIFT ESCAPE  &mkp MB4              &mkp MB5          &mkp MB3       &kp CAPS          &to 0        &lt 1 PERIOD         &kp HOME          &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &mt LEFT_SHIFT END
 &kp LCTRL              &kp TAB               &kp LEFT_GUI      &kp LEFT_ALT   &kp BACKSPACE     &lt 1 SPACE  &kp DEL              &kp ENTER                                                      &kp LEFT_SHIFT
             >;
-
-            sensor-bindings = <&inc_dec_kp UP_ARROW DOWN>;
         };
 
         tenkey {
@@ -132,8 +129,6 @@ scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LS(SEMICOLON)  &kp EQUAL      &kp N3       &kp N4   &kp N          &kp M      &kp COMMA           &kp PERIOD            &kp SLASH
 &kp LCTRL     &kp N0        &kp PERIOD    &kp LS(MINUS)      &kp BACKSPACE  &lt 1 SPACE  &kp DEL  &kp ENTER                                                           &kp BSPC
             >;
-
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
         MOUSE {
@@ -143,8 +138,6 @@ scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
 &kp LEFT_SHIFT  &none    &none         &none         &none          &kp INT_MUHENKAN  &lt 3 INTERNATIONAL_4  &none      &none     &zoom     &none             &kp RIGHT_SHIFT
 &kp LCTRL       &kp TAB  &kp LEFT_WIN  &kp LEFT_ALT  &kp BACKSPACE  &lt 1 SPACE       &lt 2 DELETE           &kp ENTER                                        &kp RCTRL
             >;
-
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
         SCROLL {
@@ -154,8 +147,6 @@ scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
 &kp Z       &kp X      &kp C     &kp V     &kp B        &kp N3  &kp N4  &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
 &kp RSHIFT  &kp LCTRL  &kp LGUI  &kp LALT  &lt 1 SPACE  &kp N5  &kp N6  &lt 2 SPACE                                &kp BSPC
             >;
-
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
 
         layer_6 {
@@ -165,8 +156,6 @@ scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
 &kp Z       &kp X      &kp C     &kp V     &kp B        &kp N3  &kp N4  &kp N        &kp M  &kp COMMA  &kp PERIOD  &kp SLASH
 &kp RSHIFT  &kp LCTRL  &kp LGUI  &kp LALT  &lt 1 SPACE  &kp N5  &kp N6  &lt 2 SPACE                                &kp BSPC
             >;
-
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
         };
     };
 };
