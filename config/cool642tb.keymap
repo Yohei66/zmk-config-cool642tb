@@ -1,4 +1,3 @@
-
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
@@ -71,12 +70,13 @@
             tapping-term-ms = <200>;
         };
 
-scroll_up_down: scroll_up_down {
-    compatible = "zmk,behavior-sensor-rotate";
-    #sensor-binding-cells = <0>;
-    bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-    tap-ms = <0>;
-};
+        scroll_up_down: scroll_up_down {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+
+            tap-ms = <0>;
+        };
 
         scroll_up_down2: scroll_up_down2 {
             compatible = "zmk,behavior-sensor-rotate";
@@ -95,7 +95,7 @@ scroll_up_down: scroll_up_down {
             bindings = <
 &kp Q             &kp W    &kp E         &kp R         &kp T                                                      &kp Y        &kp U  &kp I      &kp O       &kp P
 &kp A             &kp S    &kp D         &kp F         &kp G          &to 1                &kp LS(EQUAL)          &kp H        &kp J  &kp K      &kp L       &kp MINUS
-&mt LEFT_SHIFT Z  &kp X    &kp C         &kp V         &kp B          &kp INTERNATIONAL_5  &lt 3 INTERNATIONAL_4  &kp N        &kp M  &kp COMMA  &kp PERIOD  &mt RIGHT_SHIFT SLASH
+&mt LEFT_SHIFT Z  &kp X    &kp C         &kp V         &kp B          &kp INTERNATIONAL_5  &lt 4 INTERNATIONAL_4  &kp N        &kp M  &kp COMMA  &kp PERIOD  &mt RIGHT_SHIFT SLASH
 &kp LCTRL         &kp TAB  &kp LEFT_GUI  &kp LEFT_ALT  &kp BACKSPACE  &lt 1 SPACE          &lt 2 DEL              &lt 2 ENTER                                &mt RCTRL C_MUTE
             >;
 
@@ -107,15 +107,15 @@ scroll_up_down: scroll_up_down {
 &kp N1                        &kp N2            &kp N3                &kp N4        &kp N5                                  &kp N6            &kp N7        &kp N8             &kp N9           &kp N0
 &kp EXCLAMATION               &kp LS(NUMBER_2)  &kp HASH              &kp DOLLAR    &kp PERCENT    &to 2       &bt BT_NXT   &kp LS(NUMBER_6)  &kp LS(N7)    &kp LS(N8)         &kp LS(N9)       &kp ENTER
 &mt LEFT_SHIFT LS(SEMICOLON)  &kp MINUS         &kp LS(SINGLE_QUOTE)  &kp SLASH     &kp LS(MINUS)  &to 0       &bt BT_PRV   &kp LEFT_BRACKET  &kp QUESTION  &kp RIGHT_BRACKET  &kp NON_US_HASH  &kp LS(INTERNATIONAL_1)
-&bt BT_SEL 0                  &bt BT_SEL 1      &bt BT_SEL 2          &bt BT_SEL 3  &bt BT_SEL 4   &bt BT_CLR  &lt 3 SPACE  &kp BACKSPACE                                                       &kp LEFT_SHIFT
+&bt BT_SEL 0                  &bt BT_SEL 1      &bt BT_SEL 2          &bt BT_SEL 3  &bt BT_SEL 4   &bt BT_CLR  &lt 4 SPACE  &kp BACKSPACE                                                       &kp LEFT_SHIFT
             >;
         };
 
         function {
             bindings = <
 &kp F1                 &kp F2                &kp F3            &kp F4         &kp F5                                              &kp F6            &kp F7          &kp F8        &kp F9         &kp F10
-&kp INTERNATIONAL_1    &kp LS(LEFT_BRACKET)  &kp LS(NUMBER_2)  &kp SEMICOLON  &kp SINGLE_QUOTE  &to 3        &kp INTERNATIONAL_4  &kp INT_MUHENKAN  &kp PAGE_UP     &kp UP_ARROW  &kp PAGE_DOWN  &kp ENTER
-&mt LEFT_SHIFT ESCAPE  &mkp MB4              &mkp MB5          &mkp MB3       &kp CAPS          &to 0        &lt 1 PERIOD         &kp HOME          &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &mt LEFT_SHIFT END
+&kp INTERNATIONAL_1    &kp LS(LEFT_BRACKET)  &kp LS(NUMBER_2)  &kp SEMICOLON  &kp SINGLE_QUOTE  &to 4        &kp INTERNATIONAL_4  &kp INT_MUHENKAN  &kp PAGE_UP     &kp UP_ARROW  &kp PAGE_DOWN  &kp F11
+&mt LEFT_SHIFT ESCAPE  &mkp MB4              &mkp MB5          &kp F12        &kp CAPS          &to 0        &lt 1 PERIOD         &kp HOME          &kp LEFT_ARROW  &kp DOWN      &kp RIGHT      &mt LEFT_SHIFT END
 &kp LCTRL              &kp TAB               &kp LEFT_GUI      &kp LEFT_ALT   &kp BACKSPACE     &lt 1 SPACE  &kp DEL              &kp ENTER                                                      &kp LEFT_SHIFT
             >;
         };
@@ -133,7 +133,7 @@ scroll_up_down: scroll_up_down {
             bindings = <
 &none           &none    &none         &none         &none                                                   &none      &mkp MB5  &none     &mkp MB3          &none
 &none           &none    &none         &none         &none          &to 0             &kp RS(EQUAL)          &none      &mkp MB4  &mkp MB1  &lt 1 LEFT_SHIFT  &mkp MB2
-&kp LEFT_SHIFT  &none    &none         &none         &none          &kp INT_MUHENKAN  &lt 3 INTERNATIONAL_4  &none      &none     &zoom     &none             &kp RIGHT_SHIFT
+&kp LEFT_SHIFT  &none    &none         &none         &none          &kp INT_MUHENKAN  &lt 4 INTERNATIONAL_4  &none      &none     &zoom     &none             &kp RIGHT_SHIFT
 &kp LCTRL       &kp TAB  &kp LEFT_WIN  &kp LEFT_ALT  &kp BACKSPACE  &lt 1 SPACE       &lt 2 DELETE           &kp ENTER                                        &kp RCTRL
             >;
         };
