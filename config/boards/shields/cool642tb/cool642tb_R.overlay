@@ -88,6 +88,21 @@
             codes = <INPUT_REL_WHEEL>;
             track-remainders;
         };
+
+        // track-remainders なし → 整数切り捨てでノイズをフィルタ
+        zip_cursor_x_scaler: zip_cursor_x_scaler {
+            compatible = "zmk,input-processor-scaler";
+            #input-processor-cells = <2>;
+            type = <INPUT_EV_REL>;
+            codes = <INPUT_REL_X>;
+        };
+
+        zip_cursor_y_scaler: zip_cursor_y_scaler {
+            compatible = "zmk,input-processor-scaler";
+            #input-processor-cells = <2>;
+            type = <INPUT_EV_REL>;
+            codes = <INPUT_REL_Y>;
+        };
     };
 };
 
@@ -108,7 +123,11 @@
         >;
         process-next; 
     };
-        input-processors = <&zip_temp_layer_threshold 4 10000>;
+        input-processors = <
+            &zip_cursor_x_scaler 1 2   // X=±1ノイズ→0 (整数切り捨て), X速度は1200CPI×1/2=600CPI相当
+            &zip_cursor_y_scaler 1 2   // Y速度も同様に1200CPI×1/2=600CPI相当
+            &zip_temp_layer_threshold 4 10000
+        >;
 
     };
 };
