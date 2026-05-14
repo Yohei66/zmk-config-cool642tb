@@ -124,7 +124,7 @@
         process-next; 
     };
         input-processors = <
-            &zip_cursor_x_scaler 1 3   // X=±2ノイズ→0 (整数切り捨て), X速度は1200CPI×1/3=400CPI相当
+            &zip_cursor_x_scaler 1 5   // X<5→0にカット（±27°まで縦判定）, X速度は1200CPI×1/5=240CPI相当
             &zip_cursor_y_scaler 1 2   // Y速度も同様に1200CPI×1/2=600CPI相当
             &zip_temp_layer_threshold 4 10000
         >;
