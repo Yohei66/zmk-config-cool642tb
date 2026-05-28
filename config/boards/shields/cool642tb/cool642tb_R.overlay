@@ -124,8 +124,9 @@
         >;
         process-next; 
     };
-        // SMART_ALGORITHMが支配軸検出・スムージングを担うためカーソルスケーラーは外す
+        // Y軸を2倍に増幅して縦の鈍さを補正（SMART_ALGORITHMの支配軸検出はそのまま機能）
         input-processors = <
+            &zip_cursor_y_scaler 2 1
             &zip_temp_layer_threshold 4 10000
         >;
 
