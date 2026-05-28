@@ -118,15 +118,14 @@
             &zip_x_scaler 1 3    // X方向を1/3に抑制
             &zip_xy_transform INPUT_TRANSFORM_Y_INVERT
             &zip_xy_to_scroll_mapper  
-            &zip_scroll_x_scaler 1 160
-            &zip_scroll_y_scaler 1 80
+            &zip_scroll_x_scaler 1 40
+            &zip_scroll_y_scaler 1 20
                                
         >;
         process-next; 
     };
+        // SMART_ALGORITHMが支配軸検出・スムージングを担うためカーソルスケーラーは外す
         input-processors = <
-            &zip_cursor_x_scaler 1 5   // X<5→0にカット（±23°まで縦判定）, X速度は2400CPI×1/5=480CPI相当
-            &zip_cursor_y_scaler 1 2   // Y速度も同様に1200CPI×1/2=600CPI相当
             &zip_temp_layer_threshold 4 10000
         >;
 
