@@ -117,16 +117,16 @@
         input-processors = <
             &zip_x_scaler 1 3    // X方向を1/3に抑制
             &zip_xy_transform INPUT_TRANSFORM_Y_INVERT
-            &zip_xy_to_scroll_mapper  
-            &zip_scroll_x_scaler 1 40
-            &zip_scroll_y_scaler 1 20
-                               
+            &zip_xy_to_scroll_mapper
+            &zip_scroll_x_scaler 1 60
+            &zip_scroll_y_scaler 1 30
+
         >;
         process-next; 
     };
-        // Y軸を2倍に増幅して縦の鈍さを補正（SMART_ALGORITHMの支配軸検出はそのまま機能）
+        // CPI=900でYを直接高感度に。Xは2/3スケーラーで600相当に戻す（ドリフト増幅なし）
         input-processors = <
-            &zip_cursor_y_scaler 2 1
+            &zip_cursor_x_scaler 2 3
             &zip_temp_layer_threshold 4 10000
         >;
 
