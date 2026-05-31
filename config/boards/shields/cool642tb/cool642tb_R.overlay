@@ -124,7 +124,9 @@
         >;
         process-next; 
     };
+        // X scaler (track-remaindersなし) で小さいXノイズを切り捨て、Yはそのまま通す
         input-processors = <
+            &zip_cursor_x_scaler 1 1
             &zip_temp_layer_threshold 4 10000
         >;
 
