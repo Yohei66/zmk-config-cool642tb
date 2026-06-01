@@ -118,15 +118,13 @@
             &zip_x_scaler 1 3    // X方向を1/3に抑制
             &zip_xy_transform INPUT_TRANSFORM_Y_INVERT
             &zip_xy_to_scroll_mapper
-            &zip_scroll_x_scaler 1 60
-            &zip_scroll_y_scaler 1 30
+            &zip_scroll_x_scaler 1 80
+            &zip_scroll_y_scaler 1 40
 
         >;
         process-next; 
     };
-        // Y: 2倍に増幅（track-remainders → ゆっくりも蓄積して拾う）
         input-processors = <
-            &zip_cursor_y_scaler 2 1
             &zip_temp_layer_threshold 4 10000
         >;
 
