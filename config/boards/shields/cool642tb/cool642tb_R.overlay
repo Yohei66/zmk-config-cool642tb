@@ -124,10 +124,8 @@
         >;
         process-next; 
     };
-        // X: 1/2に絞る（track-remaindersなし → 小さいXノイズを切り捨て）
         // Y: 2倍に増幅（track-remainders → ゆっくりも蓄積して拾う）
         input-processors = <
-            &zip_cursor_x_scaler 1 2
             &zip_cursor_y_scaler 2 1
             &zip_temp_layer_threshold 4 10000
         >;
