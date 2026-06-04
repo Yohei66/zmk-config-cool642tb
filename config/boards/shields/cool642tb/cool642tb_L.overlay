@@ -1,5 +1,16 @@
 #include "cool642tb.dtsi"
 
+/ {
+    chosen {
+        zmk,battery = &non_lipo_battery;
+    };
+
+    non_lipo_battery: non_lipo_battery {
+        compatible = "zmk,non-lipo-battery";
+        io-channels = <&adc 7>;
+    };
+};
+
 &kscan0 {
         col-gpios
             = <&xiao_d 10 GPIO_ACTIVE_HIGH>
