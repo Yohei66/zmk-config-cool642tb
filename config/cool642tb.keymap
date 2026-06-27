@@ -160,6 +160,8 @@
 &mt LEFT_SHIFT LS(SEMICOLON)  &kp MINUS         &kp LS(SINGLE_QUOTE)  &kp SLASH     &kp LS(MINUS)  &to 0       &bt BT_PRV   &kp LEFT_BRACKET  &kp QUESTION  &kp RIGHT_BRACKET  &kp NON_US_HASH  &kp LS(INTERNATIONAL_1)
 &bt BT_SEL 0                  &bt BT_SEL 1      &bt BT_SEL 2          &bt BT_SEL 3  &bt BT_SEL 4   &bt BT_CLR  &lt 4 SPACE  &kp BACKSPACE                                                       &kp LEFT_SHIFT
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         function {
