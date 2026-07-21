@@ -268,7 +268,7 @@
 &mt LCTRL INTERNATIONAL_5  &kp TAB  &kp LEFT_GUI  &kp LEFT_ALT  &kp BACKSPACE  &lt 1 SPACE             &lt 3 DEL          &lt 2 ENTER                                &mt RCTRL INTERNATIONAL_4
             >;
 
-            sensor-bindings = <&scroll_move_y>;
+            sensor-bindings = <&inc_dec_kp C_AC_SCROLL_UP C_AC_SCROLL_DOWN>;
         };
 
         number {
