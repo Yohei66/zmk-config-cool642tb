@@ -162,7 +162,7 @@
         ctrlAndV: ctrlAndV {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(A)>;
+            bindings = <&kp LC(V)>;
             label = "CTRLANDV";
         };
 
