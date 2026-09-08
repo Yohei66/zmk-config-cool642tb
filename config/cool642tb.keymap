@@ -211,7 +211,8 @@
             #sensor-binding-cells = <0>;
             // 速度70 → 16ms tick 1回で 70*16/1000 = 1.12 → 1クリック確定
             // (SCRL_UP は速度10 = 1クリックに約112ms必要でタップでは発火しない)
-            bindings = <&msc MOVE_Y(70)>, <&msc MOVE_Y(-70)>;
+            // 1つ目=右回し(CW)=上スクロール, 2つ目=左回し(CCW)=下スクロール
+            bindings = <&msc MOVE_Y(-70)>, <&msc MOVE_Y(70)>;
 
             // tick は 16ms/32ms… → 1tick だけ拾う 24ms
             tap-ms = <24>;
