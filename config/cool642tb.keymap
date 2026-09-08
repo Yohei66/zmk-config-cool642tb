@@ -209,9 +209,12 @@
         scroll_up_down2: scroll_up_down2 {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+            // 速度70 → 16ms tick 1回で 70*16/1000 = 1.12 → 1クリック確定
+            // (SCRL_UP は速度10 = 1クリックに約112ms必要でタップでは発火しない)
+            bindings = <&msc MOVE_Y(70)>, <&msc MOVE_Y(-70)>;
 
-            tap-ms = <40>;
+            // tick は 16ms/32ms… → 1tick だけ拾う 24ms
+            tap-ms = <24>;
             label = "SCROLL_UP_DOWN2";
         };
     };
